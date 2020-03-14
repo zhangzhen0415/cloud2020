@@ -7,6 +7,9 @@
   <groupId>com.zhangzhen.cloud</groupId>
   <artifactId>cloud2020</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>cloud-provid-payment8001</module>
+  </modules>
   <packaging>pom</packaging>
 
   <name>Maven</name>
@@ -60,9 +63,9 @@
         <scope>import</scope>
       </dependency>
       <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>${mysql.version}</version>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.2.5</version>
       </dependency>
       <dependency>
         <groupId>com.alibaba</groupId>
@@ -92,7 +95,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
-
   
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -129,12 +131,4 @@
       </plugin>
     </plugins>
   </build>
-
-  <reporting>
-    <plugins>
-      <plugin>
-        <artifactId>maven-project-info-reports-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </reporting>
 </project>

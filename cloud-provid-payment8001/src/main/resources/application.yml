@@ -1,0 +1,19 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-service
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+    driver-class-name: org.postgresql.Driver            
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: dl123
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+  type-aliases-package: com.atguigu.springcloud.entities    # 所有Entity别名类所在包
+
+
