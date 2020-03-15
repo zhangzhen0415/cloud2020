@@ -1,6 +1,6 @@
 package com.zhangzhen.cloud.service;
 
-import com.zhangzhen.cloud.entities.Payment;
+import com.atguigu.springcloud.entities.Payment;
 import org.apache.ibatis.annotations.Param;
 
 /**

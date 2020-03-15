@@ -8,7 +8,7 @@
     </insert>
 
 
-    <resultMap id="BaseResultMap" type="com.zhangzhen.cloud.entities.Payment">
+    <resultMap id="BaseResultMap" type="com.atguigu.springcloud.entities.Payment">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <id column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
