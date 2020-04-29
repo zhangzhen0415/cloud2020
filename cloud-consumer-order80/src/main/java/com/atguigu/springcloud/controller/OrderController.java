@@ -24,9 +24,9 @@ import java.util.List;
 @Slf4j
 public class OrderController
 {
-    public static final String PAYMENT_URL = "http://localhost:8001";
+//    public static final String PAYMENT_URL = "http://localhost:8001";
 
-//    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
+    public static final String PAYMENT_URL = "http://CLOUD-PAYMENT-SERVICE";
 
     @Resource
     private RestTemplate restTemplate;
